@@ -1,0 +1,147 @@
+/* pages/home/attend/attend.wxss */
+
+/**index.wxss**/
+
+/** 修改默认的navigator点击态 **/
+.navigator-hover {
+    color:blue;
+}
+
+.home_view_course {
+  flex: 1;overflow: hidden;text-align: center;
+}
+
+.view_course {
+  flex: 1;overflow: hidden;text-align: center;
+}
+
+.view_time {
+  flex: 1;overflow: hidden;text-align: center;
+}
+
+.home_course {
+  color:#aaa;
+}
+
+.text_attend {
+  color:#aaa;
+  font-size:16px;
+}
+
+.text_session {
+  color:#aaa;
+  font-size:16px;
+}
+
+.text_time {
+  color:#aaa;
+  font-size:14px;
+}
+
+.home_text_menu {
+  color:#aaa;font-size: 12px;
+}
+
+.attend_menu {
+  width: 80rpx;height: 80rpx;
+}
+
+.flex_row {
+  display: flex;flex-direction: row;align-items: center;background-color: #ffffff;margin-bottom: 10rpx;
+}
+
+.flex_col {
+  display: flex;flex-direction: column;align-items: center;background-color: #ffffff;
+  margin-left: 100rpx;margin-top: 40rpx;margin-bottom: 40rpx;
+}
+
+.home_image {
+  width: 128rpx;height: 128rpx;margin: 30rpx;border-radius: 100%;
+}
+
+.home_header {
+  width: 64rpx;height: 64rpx;margin: 20rpx;
+}
+
+.timetable_header {
+  width: 64rpx;height: 64rpx;margin: 10rpx;
+}
+
+.timetable_title {
+  color:#ffffff;font-size: 14px
+}
+
+.timetable_title_small {
+  color:#ffffff;font-size: 10px
+}
+
+.flex_row_green {
+  display: flex;flex-direction: row;align-items: center;background-color: #009688;margin: 10px;
+}
+
+.flex_col_green {
+  display: flex;flex-direction: column;align-items: center;background-color: #009688;
+  margin-left: 55rpx;margin-top: 10rpx;margin-bottom: 10rpx;
+}
+
+.flex_row_course {
+  display: flex;flex-direction: row;align-items: center;background-color: #ffffff;
+}
+
+.flex_col_course {
+  display: flex;flex-direction: column;align-items: center;background-color: #ffffff;
+  margin-top: 10rpx;margin-bottom: 10rpx;
+}
+
+.timetable_time {
+  color:#aaa;font-size: 12px;
+}
+
+.timetable_table {
+  color:#aaa;font-size: 10px;
+}
+
+.timetable_course {
+  color:#aaa;font-size: 14px;
+}
+
+.course_middle {
+  flex: 1;width: 500rpx;text-align: right;
+}
+
+.timetable_to {
+  width: 48rpx;height: 48rpx;margin: 10rpx;
+}
+
+.box_row_attend {
+  display: -webkit-box;flex-direction: row;align-items: center;background-color: #ffffff;margin-bottom: 10rpx;
+  -webkit-box-orient:horizontal;
+}
+
+.box_col_attend {
+  display: flex;flex-direction: column;align-items: center;background-color: #ffffff;
+  margin-top: 25rpx;margin-bottom: 25rpx;-webkit-box-flex:1;
+}
+
+.flex_row_session {
+  display: flex;flex-direction: row;align-items: center;background-color: #ffffff;
+}
+
+.scroll_view_student {
+  height: 600rpx;background-color: #ffffff; margin-bottom: 10rpx;
+}
+
+.img_student {
+  width: 100rpx;height: 100rpx;margin: 10rpx;
+}
+
+.view_student{
+  display: flex;flex-direction: column;width:150rpx; height:150rpx;background-color:#00ff00;
+   margin: 20rpx;align-items: center;
+}
+
+.view_student_chked{
+  display: flex;flex-direction: column;width:150rpx; height:150rpx;background-color:#ff0000;
+   margin: 20rpx;align-items: center;
+}
+

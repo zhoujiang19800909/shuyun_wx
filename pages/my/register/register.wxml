@@ -1,0 +1,94 @@
+<import src="../../common/head.wxml" />
+<import src="../../common/foot.wxml" />
+
+<view class="container">
+  <!-- <template is="head" data="{{title: 'form'}}"/> -->
+  <view class="ad_popError" wx:if="{{popErrorMsg}}">{{popErrorMsg}}</view>
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class="page-section">
+        <!-- <view class="weui-cells__title">姓名</view> -->
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+              <input class="weui-input" name="name" placeholder="姓名(必填)" />
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view>
+            <view class="weui-label">性别</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindGenderChange" name="gender_index" value="{{gender_index}}" range="{{genders_view}}">
+              <view class="weui-input">{{genders_view[gender_index]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+      <view class="page-section">
+        <!-- <view class="weui-cells__title">手机号码</view> -->
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view>
+              <input class="weui-input" name="phone" type="number" placeholder="手机号码(必填)" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <!-- <view class="weui-cells__title">用户类型</view> -->
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">用户类型</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindUserTypeChange" name="usertype_index" value="{{usertype_index}}" range="{{usertypes_view}}">
+              <view class="weui-input">{{usertypes_view[usertype_index]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+      <!-- <view class="weui-cells__title">日期选择器</view> 
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">出生日期</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker mode="date" value="{{date}}" name="birth_date" bindchange="bindDateChange">
+              <view class="weui-input">{{date}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+      -->
+
+      <!-- <view class="weui-cells__title">联系地址</view> 
+      <view class="page-section">
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view>
+              <input class="weui-input" name="addr" placeholder="联系地址" />
+            </view>
+          </view>
+        </view>
+      </view>
+      -->
+
+      <view class="page-section">
+      <view class="flex-wrp" style="flex-direction:column;">
+        <view class="flex-item"></view>
+      </view>
+    </view>
+      <view class="btn-sp-area">
+        <button type="primary" formType="submit">提 交</button>
+        <button formType="reset">重 置</button>
+      </view>
+    </form>
+  </view>
+</view>

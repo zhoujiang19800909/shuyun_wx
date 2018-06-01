@@ -1,0 +1,39 @@
+/**index.wxss**/
+
+/** 修改默认的navigator点击态 **/
+.navigator-hover {
+    color:blue;
+}
+
+.home_view_course {
+  flex: 1;overflow: hidden;text-align: center;
+}
+
+.home_course {
+  color:#aaa;
+}
+
+.home_text_menu {
+  color:#aaa;font-size: 12px;
+}
+
+.home_menu {
+  width: 64rpx;height: 64rpx;
+}
+
+.flex_row {
+  display: flex;flex-direction: row;align-items: center;background-color: #ffffff;margin-bottom: 10rpx;
+}
+
+.flex_col {
+  display: flex;flex-direction: column;align-items: center;background-color: #ffffff;
+  margin-top: 40rpx;margin-bottom: 40rpx;width:25%;
+}
+
+.home_image {
+  width: 128rpx;height: 128rpx;margin: 30rpx;border-radius: 100%;
+}
+
+.home_header {
+  width: 64rpx;height: 64rpx;margin: 20rpx;
+}

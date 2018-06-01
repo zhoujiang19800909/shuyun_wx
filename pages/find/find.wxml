@@ -1,0 +1,21 @@
+<!--find.wxml-->
+<view class="container">
+  <view class="flex_row">
+    <view class="flex_col">
+      <image src="../../image/school.png" background-size="cover" class="home_menu"></image>
+      <text class="home_text_menu">学校</text>
+    </view>
+    <view class="flex_col">
+      <image src="../../image/faculty.png" background-size="cover" class="home_menu"></image>
+      <text class="home_text_menu">师资</text>
+    </view>
+    <view class="flex_col">
+      <image src="../../image/find_course.png" background-size="cover" class="home_menu"></image>
+      <text class="home_text_menu">课程</text>
+    </view>
+    <view class="flex_col">
+      <image src="../../image/activity.png" background-size="cover" class="home_menu"></image>
+      <text class="home_text_menu">活动</text>
+    </view>
+  </view>
+</view>

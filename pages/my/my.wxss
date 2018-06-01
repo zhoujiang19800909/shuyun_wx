@@ -1,0 +1,69 @@
+/**index.wxss**/
+.container {
+  background-color: #F2f2f2;
+}
+/* .userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-setup {
+  width: 64rpx;
+  height: 64rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+.info {
+  margin-top: 50px;
+  text-align: center;
+} */
+
+/** 修改默认的navigator点击态 **/
+.navigator-hover {
+    color:blue;
+}
+
+.my_view_name {
+  flex: 1;
+  margin-left: 10px;
+  padding-top: 5px;
+  overflow: hidden;
+}
+
+.flex_row {
+  display: flex;flex-direction: row;align-items: center;background-color: #ffffff;margin-bottom: 10rpx;
+}
+
+.my_image {
+  width: 128rpx;height: 128rpx;margin: 30rpx;border-radius: 100%;
+}
+
+.my_name {
+  color:#aaa;
+}
+
+.my_setting {
+  width: 64rpx;height: 64rpx;margin: 50rpx;
+}
+
+.item_left {
+  width: 64rpx;height: 64rpx;margin: 20rpx;
+}
+
+.course_middle {
+  flex: 1;overflow: hidden;
+}
+
+.item_right {
+  width: 32rpx;height: 32rpx;margin: 20rpx;
+}

@@ -1,0 +1,89 @@
+<view class="container">
+  <view class="flex_row">
+    <view>
+      <image src="../../../image/filter.png" background-size="cover" class="home_header"></image>
+    </view>
+    <view class="home_view_course">
+      <text class="home_course">全部课程</text>
+    </view>
+    <view>
+      <image src="../../../image/menu.png" background-size="cover" class="home_header"></image>
+    </view>
+  </view>
+  <view class="box_row_attend">
+    <view class="box_col_attend">
+      <image src="../../../image/chkin_selected.png" background-size="cover" class="attend_menu"   bindtap="naviToCourse"></image>
+      <text class="home_text_menu">签到</text>
+    </view>
+    <view class="box_col_attend">
+      <image src="../../../image/chkout.png" background-size="cover" class="attend_menu"></image>
+      <text class="home_text_menu">签退</text>
+    </view>
+    <view class="box_col_attend">
+      <image src="../../../image/attends.png" background-size="cover" class="attend_menu"></image>
+      <text class="home_text_menu">记录</text>
+    </view>
+  </view>
+  <view class="flex_row_session">
+    <view>
+      <image src="../../../image/filter.png" background-size="cover" class="home_header"></image>
+    </view>
+    <view class="view_course">
+      <view class="flex_col_course">
+        <text class="text_session">中考基础强化201801期-物理</text>
+        <text class="text_time">2018年1月22日 09:00-11:00</text>
+      </view>
+    </view>
+    <view>
+      <image src="../../../image/rwcode.png" background-size="cover" class="home_header"></image>
+    </view>
+  </view>
+  <scroll-view scroll-y class="scroll_view_student">
+    <view wx:for="{{students}}">
+      <view class="flex_row">
+        <view id="{{item[0]['id']}}" class="{{item[0]['chkin']?'view_student_chked':'view_student'}}" bindtap='chkStudent'>
+          <image src="{{item[0]['image']}}" class="img_student" />
+          <text class="home_text_menu">{{item[0]['name']}}</text>
+        </view>
+        <view id="{{item[1]['id']}}" class="{{item[1]['chkin']?'view_student_chked':'view_student'}}" bindtap='chkStudent'>
+          <image src="{{item[1]['image']}}" class="img_student"/>
+          <text class="home_text_menu">{{item[1]['name']}}</text>
+        </view>
+        <view id="{{item[2]['id']}}" class="{{item[2]['chkin']?'view_student_chked':'view_student'}}" bindtap='chkStudent'>
+          <image src="{{item[2]['image']}}" class="img_student"/>
+          <text class="home_text_menu">{{item[2]['name']}}</text>
+        </view>
+        <view id="{{item[3]['id']}}" class="{{item[3]['chkin']?'view_student_chked':'view_student'}}" bindtap='chkStudent'>
+          <image src="{{item[3]['image']}}" class="img_student"/>
+          <text class="home_text_menu">{{item[3]['name']}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="box_row">
+    <view class="box_col">
+      <text class="home_text_menu">应到</text>
+      <text class="home_text_menu">实到</text>
+    </view>
+    <view class="box_col">
+      <text class="home_text_menu">22</text>
+      <text class="home_text_menu">22</text>
+    </view>
+    <view class="box_col">
+      <text class="home_text_menu">迟到</text>
+      <text class="home_text_menu">早退</text>
+    </view>
+    <view class="box_col">
+      <text class="home_text_menu">2</text>
+      <text class="home_text_menu">2</text>
+    </view>
+    <view class="box_col">
+      <text class="home_text_menu">缺勤</text>
+    </view>
+    <view class="box_col">
+      <text class="home_text_menu">1</text>
+    </view>
+  </view>
+
+
+</view>

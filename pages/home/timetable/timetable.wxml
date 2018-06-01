@@ -1,0 +1,99 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="flex_row">
+    <view>
+      <image src="../../../image/filter.png" background-size="cover" class="home_header"></image>
+    </view>
+    <view class="home_view_course">
+      <text class="home_course">我的课程</text>
+    </view>
+    <view>
+      <image src="../../../image/menu.png" background-size="cover" class="home_header"></image>
+    </view>
+  </view>
+  <view class="flex_row_green">
+    <view>
+      <image src="../../../image/arrow-left.png" background-size="cover" class="timetable_header" bindtap='lastWeek'></image>
+    </view>
+    <view class="home_view_course">
+        <text class="timetable_title">{{mondayView}} - {{sundayView}}</text>
+      </view>
+    <view>
+      <image src="../../../image/arrow-right.png" background-size="cover" class="timetable_header" bindtap='nextWeek'></image>
+    </view>
+  </view>
+  <view class="flex_row_green">
+    <view class="flex_col_green">
+      <text class="timetable_title">-:-</text>
+    </view>
+    <view class="flex_col_green">
+      <text class="timetable_title">{{days[0]}}</text>
+      <text class="timetable_title_small">一</text>
+    </view>
+    <view class="flex_col_green">
+      <text class="timetable_title">{{days[1]}}</text>
+      <text class="timetable_title_small">二</text>
+    </view>
+    <view class="flex_col_green">
+      <text class="timetable_title">{{days[2]}}</text>
+      <text class="timetable_title_small">三</text>
+    </view>
+    <view class="flex_col_green">
+      <text class="timetable_title">{{days[3]}}</text>
+      <text class="timetable_title_small">四</text>
+    </view>
+    <view class="flex_col_green">
+      <text class="timetable_title">{{days[4]}}</text>
+      <text class="timetable_title_small">五</text>
+    </view>
+    <view class="flex_col_green">
+      <text class="timetable_title">{{days[5]}}</text>
+      <text class="timetable_title_small">六</text>
+    </view>
+    <view class="flex_col_green">
+      <text class="timetable_title">{{days[6]}}</text>
+      <text class="timetable_title_small">日</text>
+    </view>
+  </view>
+  <view class="flex_col_course">
+    <canvas canvas-id="timetable" style="width: 360px; height: 200px;" bindtouchstart="touchstart" />
+  </view>
+  <view class="flex_col_course">
+    <view class="flex_col_course">
+      <text class="timetable_course">物理/中考基础强化</text>
+      <text class="timetable_course">----------------------------------------------------------</text>
+    </view>
+    <view class="flex_row_course">
+      <text class="timetable_course">时间:</text>
+      <view class="course_middle">
+        <text class="timetable_course">{{selectedSession.timeView}}</text>
+      </view>
+      <image src="../../../image/to.png" background-size="cover" class="timetable_to"></image>
+    </view>
+    <view class="flex_row_course">
+      <text class="timetable_course">教室:</text>
+      <view class="course_middle">
+        <text class="timetable_course">{{selectedSession.classroom}}</text>
+      </view>
+      <image src="../../../image/to.png" background-size="cover" class="timetable_to"></image>
+    </view>
+    <view class="flex_row_course">
+      <text class="timetable_course">主讲:</text>
+      <view class="course_middle">
+        <text class="timetable_course">{{selectedSession.faculty}}</text>
+      </view>
+      <image src="../../../image/to.png" background-size="cover" class="timetable_to"></image>
+    </view>
+    <view class="flex_row_course">
+      <text class="timetable_course">人数:</text>
+      <view class="course_middle">
+        <text class="timetable_course">{{selectedSession.studentCnt}}</text>
+      </view>
+      <image src="../../../image/to.png" background-size="cover" class="timetable_to"></image>
+    </view>
+  </view>
+
+
+</view>
+
+

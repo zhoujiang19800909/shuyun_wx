@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="flex_row">
+    <view>
+      <image src="../../image/filter.png" background-size="cover" class="home_header"></image>
+    </view>
+    <view class="home_view_course">
+      <text class="home_course">全部课程</text>
+    </view>
+    <view>
+      <image src="../../image/menu.png" background-size="cover" class="home_header"></image>
+    </view>
+  </view>
+  <view class="box_row">
+    <view class="box_col">
+      <image src="../../image/timetable.png" background-size="cover" class="home_menu" bindtap="naviToCourse"></image>
+      <text class="home_text_menu">课程表</text>
+    </view>
+    <view class="box_col">
+      <image src="../../image/attend.png" background-size="cover" class="home_menu" bindtap="naviToAttend"></image>
+      <text class="home_text_menu">签到</text>
+    </view>
+    <view class="box_col">
+      <image src="../../image/homework.png" background-size="cover" class="home_menu"></image>
+      <text class="home_text_menu">作业</text>
+    </view>
+    <view class="box_col">
+      <image src="../../image/exam.png" background-size="cover" class="home_menu"></image>
+      <text class="home_text_menu">考试</text>
+    </view>
+  </view>
+
+
+
+</view>
